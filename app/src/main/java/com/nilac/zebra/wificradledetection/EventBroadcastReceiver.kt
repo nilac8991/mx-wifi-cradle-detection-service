@@ -1,4 +1,4 @@
-package com.nilac.zebra.dndcradledetection
+package com.nilac.zebra.wificradledetection
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -13,7 +13,7 @@ class EventBroadcastReceiver : BroadcastReceiver() {
         ) {
             Log.d(TAG, "Starting EventBroadcastReceiver")
 
-            context.startForegroundService(Intent(context, DNDToggleService::class.java))
+            context.startForegroundService(Intent(context, MainService::class.java))
         }
     }
 

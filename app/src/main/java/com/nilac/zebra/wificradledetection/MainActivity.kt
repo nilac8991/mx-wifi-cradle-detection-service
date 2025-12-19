@@ -1,8 +1,6 @@
-package com.nilac.zebra.dndcradledetection
+package com.nilac.zebra.wificradledetection
 
 import android.Manifest
-import android.app.ActivityManager
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
@@ -52,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startService() {
-        startForegroundService(Intent(this, DNDToggleService::class.java))
+        startForegroundService(Intent(this, MainService::class.java))
         finishAffinity()
     }
 

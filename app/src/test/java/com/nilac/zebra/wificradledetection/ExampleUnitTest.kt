@@ -1,4 +1,4 @@
-package com.nilac.zebra.dndcradledetection
+package com.nilac.zebra.wificradledetection
 
 import org.junit.Test
 

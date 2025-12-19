@@ -27,6 +27,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DND Cradle Detection"
+rootProject.name = "WiFi Cradle Detection"
 include(":app")
  

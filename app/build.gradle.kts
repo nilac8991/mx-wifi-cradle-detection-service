@@ -1,16 +1,14 @@
-import com.android.build.api.variant.VariantOutput
-
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
 android {
-    namespace = "com.nilac.zebra.dndcradledetection"
+    namespace = "com.nilac.zebra.wificradledetection"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.nilac.zebra.dndcradledetection"
+        applicationId = "com.nilac.zebra.wificradledetection"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -42,7 +40,7 @@ android {
         onVariants { variant ->
             variant.outputs.forEach { output ->
                 if (output is com.android.build.api.variant.impl.VariantOutputImpl) {
-                    output.outputFileName = "app-mx-dnd-cradle-detection-release.apk"
+                    output.outputFileName = "app-mx-wifi-cradle-detection-release.apk"
                 }
             }
         }
